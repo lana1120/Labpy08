@@ -164,7 +164,7 @@ Berikut adalah penjelasan dari kode program Python yang telah dibuat untuk menge
    - Berdasarkan pilihan yang dimasukkan, program akan memanggil metode yang sesuai dari kelas Mahasiswa.
 
 # DIAGRAM CLASS
-
+![diagram class](https://github.com/user-attachments/assets/29003f49-1ab4-40c9-8509-80f53df5dbf2)
 
 # Penjelasan Diagram Class
 Berikut adalah elemen-elemen yang akan ada dalam diagram kelas untuk kelas
