@@ -2,9 +2,10 @@
 
 **Tugas Pemrograman Pertuemuan11**
 
-**Nama: Maulana Malik Ibrahim ( 312410185 )**
+**Nama : Maulana Malik Ibrahim ( 312410185 )**
 
 # FLOWCHART
+![flowchart](https://github.com/user-attachments/assets/b4820aea-6a1f-40d1-a2b1-12697d40f862)
 # Python
 
   class Mahasiswa:
@@ -161,3 +162,85 @@ Berikut adalah penjelasan dari kode program Python yang telah dibuat untuk menge
  - Input Pengguna :
    - Menggunakan `input()` untuk mendapatkan pilihan dari pengguna dan data siswa yang ingin ditambahkan, diubah, atau dihapus.
    - Berdasarkan pilihan yang dimasukkan, program akan memanggil metode yang sesuai dari kelas Mahasiswa.
+
+# DIAGRAM CLASS
+
+
+# Penjelasan Diagram Class
+Berikut adalah elemen-elemen yang akan ada dalam diagram kelas untuk kelas
+
+# 1.Kelas Mahasiswa
+**Deskripsi** :
+Kelas ini adalah inti dari manajemen data mahasiswa, bertanggung jawab untuk mengelola seluruh operasi pada data mahasiswa.
+
+**Atribut**
+- `daftar_mahasiswa` (private list):
+  - Menyimpan kumpulan data mahasiswa
+  - Bersifat privat untuk melindungi integritas data
+
+**Metode**
+ - `-__init__():`
+   - Konstruktor kelas
+   - Menginisialisasi list kosong untuk menyimpan data mahasiswa
+
+ - `tambah(nama, nim, nilai):`
+   - Menambahkan mahasiswa baru ke dalam daftar
+   - Menerima parameter nama, NIM, dan nilai
+   - Membuat entri baru dalam daftar mahasiswa
+
+ - `tampilkan():`
+    - Menampilkan seluruh data mahasiswa yang tersimpan
+    - Menangani kasus daftar kosong
+    - Menampilkan informasi setiap mahasiswa termasuk nama, NIM, dan nilai
+
+ - `hapus(nama):`
+   - Menghapus data mahasiswa berdasarkan nama
+   - Mencari mahasiswa dengan nama tertentu
+   - Menghapus entri jika ditemukan
+   - Memberikan konfirmasi atau pesan kesalahan
+
+ - `ubah(nama, nim_baru, nilai_baru):`
+    - Mengubah data mahasiswa yang sudah ada
+    - Mencari mahasiswa berdasarkan nama
+    - Memperbarui NIM dan nilai
+    - Memberikan konfirmasi perubahan
+
+# 2.Kelas Data Mahasiswa
+**Deskripsi**:
+Kelas ini merupakan struktur data untuk menyimpan informasi individual setiap mahasiswa.
+
+**Atribut**
+ - `nama (string)`: Nama lengkap mahasiswa
+ - `nim (integer)`: Nomor Induk Mahasiswa
+ - `nilai (integer)`: Nilai akademik mahasiswa
+
+# 3.Kelas Main
+**Deskripsi**:
+Kelas yang bertanggung jawab untuk menjalankan program dan berinteraksi dengan pengguna.
+
+**Metode**
+ - `main():`
+   - Fungsi utama untuk menjalankan program
+   - Membuat instance kelas Mahasiswa
+   - Memulai loop utama program
+  
+ - `tampilkan_menu():`
+   - Menampilkan pilihan menu kepada pengguna
+   - Memudahkan interaksi dan navigasi program
+
+ - `pilih_menu():`
+   - Memproses pilihan menu yang dipilih pengguna
+   - Memanggil metode yang sesuai dari kelas Mahasiswa
+
+# Hubungan Antar Kelas
+**Komposisi (Mahasiswa -- 0.. DataMahasiswa)**
+ - Kelas Mahasiswa mengandung beberapa objek DataMahasiswa
+ - Hubungan komposisi berarti objek DataMahasiswa tidak dapat eksis tanpa Mahasiswa
+ - Satu objek Mahasiswa dapat memiliki 0 atau lebih objek DataMahasiswa
+
+**Asosiasi (Main ..> Mahasiswa)**
+ - Kelas Main menggunakan (uses) kelas Mahasiswa
+ - Main bergantung pada fungsionalitas Mahasiswa untuk menjalankan program
+
+**Kesimpulan**
+Diagram kelas memberikan gambaran yang jelas tentang struktur kelas Mahasiswa, atribut yang dimiliki, dan metode yang dapat dipanggil. Ini membantu dalam memahami bagaimana data mahasiswa dikelola dalam program dan bagaimana interaksi antar metode terjadi. Jika Anda memiliki pertanyaan lebih lanjut atau ingin menambahkan elemen lain ke dalam diagram, silakan beri tahu!
