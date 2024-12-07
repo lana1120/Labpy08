@@ -1,6 +1,6 @@
 # Labpy08
 
-**Tugas Pemrograman Pertuemuan11**
+**Tugas Pemrograman Pertuemuan 12**
 
 **Nama : Maulana Malik Ibrahim ( 312410185 )**
 
